@@ -1,165 +1,147 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>精准扶贫 - 王先生</title>
-  
-   <!-- SEO Meta -->
-  <meta name="description" content="精准扶贫不仅是一份支持，也是一份支持——奉献力量，助王先生早日与大家共同富裕。">
-  <meta name="keywords" content="精准扶贫,王先生,个人站长,共同富裕">
-  <meta name="author" content="王先生">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>精准扶贫 - 王先生</title>
+    <style>
+        /* 引入具有人文气息的字体 */
+        @import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Serif+SC:wght@200;400&display=swap');
 
-  <!-- Open Graph / 社交分享 -->
-  <meta property="og:title" content="精准扶贫 - 王先生">
-  <meta property="og:description" content="精准扶贫不仅是一份支持，也是一份支持——奉献力量，助王先生早日与大家共同富裕。">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://jingzhunfupin.wangxiansheng.com">
-  <meta property="og:image" content="https://www.wangxiansheng.com/images/logo.png">
-  
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="精准扶贫 - 王先生">
-  <meta name="twitter:description" content="精准扶贫不仅是一份支持，也是一份支持——奉献力量，助王先生早日与大家共同富裕。">
-  <meta name="twitter:image" content="https://www.wangxiansheng.com/images/logo.png">
-  
-  
-  <!-- Bootstrap 5 CSS (Cloudflare CDN) -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body {
-      background-color: #e1e8ed; /* 整体冷灰蓝背景 */
-      font-family: "Microsoft YaHei", sans-serif;
-      color: #2c3e50; /* 主文字深灰蓝 */
-    }
-    a, a:hover {
-      color: #34495e;
-      text-decoration: none;
-    }
+        body {
+            margin: 0;
+            height: 100vh;
+            background-color: #fff; /* 纯白底色，极致简约 */
+            color: #333;
+            font-family: 'Noto Serif SC', serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
 
-    /* 顶部 Hero */
-    .hero {
-      background: linear-gradient(to right, #a7b3c1, #90a4ae); /* 冷灰蓝渐变 */
-      color: #1c1c1c;
-      padding: 100px 15px;
-      text-align: center;
-      border-bottom: 2px solid #78909c;
-    }
-    .hero h1 {
-      font-weight: 700;
-      font-size: 3rem;
-      margin-bottom: 15px;
-    }
-    .hero p {
-      font-size: 1.2rem;
-      color: #37474f;
-    }
+        .container {
+            display: flex;
+            flex-direction: row-reverse; /* 模拟古籍从右向左阅读 */
+            align-items: center;
+            gap: 60px;
+        }
 
-    /* 故事区 */
-    .story {
-      max-width: 800px;
-      margin: -60px auto 60px auto;
-      background-color: #d7e0eb; /* 浅灰蓝卡片 */
-      padding: 40px 30px;
-      border-radius: 12px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
-      line-height: 1.9;
-    }
-    .story h2 {
-      text-align: center;
-      margin-bottom: 30px;
-      color: #2c3e50;
-      border-bottom: 1px solid #b0bec5;
-      padding-bottom: 10px;
-    }
+        /* 竖排文案区域 */
+        .manifesto {
+            writing-mode: vertical-rl; /* 竖排文字 */
+            text-orientation: mixed;
+            letter-spacing: 0.5em;
+            line-height: 2;
+        }
 
-    /* 支持区 */
-    .support {
-      background-color: #c0cbd6; /* 浅灰蓝暗版 */
-      padding: 60px 15px;
-      text-align: center;
-      border-top: 2px solid #b0bec5;
-    }
-    .qrcode {
-      max-width: 160px;
-      margin: 15px;
-      border: 4px solid #b0bec5;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
-    }
+        .manifesto h1 {
+            font-family: 'Ma Shan Zheng', cursive; /* 毛笔书法感 */
+            font-size: 2.5rem;
+            margin-left: 20px;
+            font-weight: 400;
+        }
 
-    /* 页脚 */
-    footer {
-      background-color: #7c8a99; /* 深灰蓝 */
-      color: #eceff1;
-      text-align: center;
-      padding: 20px 0;
-      font-size: 14px;
-      border-top: 1px solid #607d8b;
-    }
-    
-    footer a, footer a:hover {
-      color: #eceff1; /* 与页脚文字颜色统一 */
-      text-decoration: none;
-    }
+        .manifesto p {
+            font-size: 0.9rem;
+            color: #888;
+        }
 
-    p {
-      margin-bottom: 20px;
-    }
-  </style>
+        /* 交互区域 */
+        .interactive-zone {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .qr-box {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            transition: all 0.5s ease;
+        }
+
+        .qr-box img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 0.8s ease;
+            filter: contrast(0.8) sepia(0.2); /* 淡淡的老照片色调 */
+        }
+
+        .qr-box img.active {
+            opacity: 1;
+        }
+
+        .nav {
+            margin-top: 40px;
+            font-size: 13px;
+            letter-spacing: 2px;
+        }
+
+        .nav span {
+            margin: 0 10px;
+            cursor: pointer;
+            color: #ccc;
+            transition: color 0.3s;
+        }
+
+        .nav span.active {
+            color: #b08d57; /* 琥珀金 */
+            font-weight: bold;
+        }
+
+        /* 适配手机 */
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+                gap: 30px;
+            }
+            .manifesto {
+                writing-mode: horizontal-tb;
+                text-align: center;
+                letter-spacing: 0.2em;
+            }
+            .manifesto h1 { margin-left: 0; margin-bottom: 10px; }
+        }
+    </style>
 </head>
 <body>
 
-  <!-- 顶部标题区 -->
-  <section class="hero">
     <div class="container">
-      <h1>精准扶贫</h1>
-      <p class="mt-3">每一份支持，都是共同富裕的希望</p>
+        <div class="manifesto">
+            <h1>江湖路远</h1>
+            <p>漂泊至此，若得一两碎银</p>
+            <p>便可换得片刻微醺</p>
+            <p>不问来路，不谢归途</p>
+        </div>
+
+        <div class="interactive-zone">
+            <div class="qr-box">
+                <img src="https://jingzhunfupin.wangxiansheng.com/images/alipay.png" id="alipay" class="active" alt="Alipay">
+                <img src="https://jingzhunfupin.wangxiansheng.com/images/wechat.png" id="wechat" alt="WeChat">
+            </div>
+
+            <div class="nav">
+                <span id="btn-wechat" class="active" onclick="toggle('wechat')">「 微信 」</span>
+                <span id="btn-alipay" onclick="toggle('alipay')">「 支付宝 」</span>
+            </div>
+        </div>
     </div>
-  </section>
 
-  <!-- 个人经历叙述 -->
-  <section class="story">
-    <h2>我的故事</h2>
-    <p>
-      曾经，我满怀激情投入创业，怀揣梦想建立了自己的事业。夜以继日的努力，却换来了无尽的失望与挫折。  
-      由于公司经营的失败，我几乎失去了一切，曾经引以为傲的一切都在瞬间化为乌有。
-    </p>
-    <p>
-      不甘就此沉沦，我决定凭借自己的技术，再奋搏一把。可现实残酷至极：  
-      在我即将有所收获之时，我的网站被国内最大的搜索引擎起诉，所有努力顷刻间灰飞烟灭。  
-      巨额的赔偿如同无形的枷锁，将我压入深不见底的困境，每一天都被焦虑、恐惧与无眠吞噬。
-    </p>
-    <p>
-      在无尽的黑暗中，我仍渴望着人与人之间的温暖。精准帮扶不仅是一份支持，更是一种信念——  
-      当你我相互扶持，再微小的力量也能点亮希望，让困境中的我看到前行的一丝光。
-    </p>
-    <p>
-      如果你愿意关注我的故事，伸出援手，让我在这段凄凉中继续前行，每一份帮助都是我们共同富裕的桥梁。
-    </p>
-  </section>
+    <script>
+        function toggle(type) {
+            // 切换按钮状态
+            document.querySelectorAll('.nav span').forEach(el => el.classList.remove('active'));
+            document.getElementById('btn-' + type).classList.add('active');
 
-  <!-- 支持区 -->
-  <section class="support">
-    <div class="container">
-      <h2 class="mb-4">扶贫入口</h2>
-      <p class="text-muted mb-4">通过支付宝或微信扫码，支持我共同富裕的努力</p>
-      <div>
-        <img src="images/alipay.png" alt="支付宝收款码" class="qrcode">
-        <img src="images/wechat.png" alt="微信收款码" class="qrcode">
-      </div>
-      <p class="mt-4 text-secondary">—— 愿每一份支持，都让我们彼此温暖 ——</p>
-    </div>
-  </section>
-
-  <!-- 页脚 -->
-  <footer>
-    <div class="container">
-      <p>©2025 <a href="https://www.wangxiansheng.com" title="王先生" target="_blank">王先生</a> 版权所有</p>
-    </div>
-  </footer>
-
-  <!-- Bootstrap 5 JS (Cloudflare CDN) -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+            // 切换二维码
+            document.querySelectorAll('.qr-box img').forEach(img => img.classList.remove('active'));
+            document.getElementById(type).classList.add('active');
+        }
+    </script>
 </body>
 </html>
